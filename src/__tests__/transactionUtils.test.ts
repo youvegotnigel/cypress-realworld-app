@@ -5,7 +5,7 @@ import {
   getQueryWithoutDateFields,
   getQueryWithoutAmountFields,
   getQueryWithoutFilterFields,
-} from "../transactionUtils";
+} from "../utils/transactionUtils";
 import { faker } from "@faker-js/faker";
 import {
   Transaction,
@@ -13,7 +13,7 @@ import {
   DefaultPrivacyLevel,
   TransactionStatus,
   TransactionResponseItem,
-} from "../../models";
+} from "../models";
 import shortid from "shortid";
 
 const fakeTransaction = (

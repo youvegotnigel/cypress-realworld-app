@@ -5,7 +5,7 @@ import SignInForm from "./SignInForm";
 import { authMachine } from "../machines/authMachine";
 
 describe("SignInForm", () => {
-  let authService;
+  let authService: any;
   beforeEach(() => {
     authService = interpret(authMachine);
     authService.start();

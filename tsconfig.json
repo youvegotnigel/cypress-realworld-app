@@ -18,5 +18,6 @@
     "noFallthroughCasesInSwitch": true,
     "types": ["cypress"]
   },
-  "include": ["src/**/*.cy.{js,ts,jsx,tsx}", "scripts", "backend", "src/__tests__", "cypress/support/component.ts"]
+  "include": ["src", "scripts", "backend", "cypress/global.d.ts"],
+  "exclude": ["src/__tests__"]
 }

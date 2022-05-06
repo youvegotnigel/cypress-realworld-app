@@ -6,7 +6,7 @@ import { Severities, snackbarMachine } from "../machines/snackbarMachine";
 
 describe("Alert Bar with state", () => {
   const SeverityValues = Object.values(Severities);
-  let snackbarService;
+  let snackbarService: any;
   beforeEach(() => {
     snackbarService = interpret(snackbarMachine);
     snackbarService.start();
